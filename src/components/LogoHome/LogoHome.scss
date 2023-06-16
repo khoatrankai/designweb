@@ -1,0 +1,26 @@
+.logohome a {
+    position: fixed;
+    top: 92vh;
+    right: 6vw;
+    font-family: 'poppins', sans-serif;
+    font-size: 31px;
+    font-weight: 800;
+    color: transparent;
+    -webkit-text-stroke: 2px black;
+    // background: url('../OnePage/back.png');
+    // background-clip: text;
+    // background-position: 0 0;
+    // animation: back;
+    // transform: rotateY(45deg);
+    animation: rotate-logo 5s linear infinite;
+}
+
+@keyframes rotate-logo {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    100% {
+        transform: rotateY(360deg);
+    }
+}

@@ -1,0 +1,133 @@
+.introduce {
+    width: 100%;
+    position: relative;
+    background-color: white;
+}
+.imghomepage {
+    width: 100%;
+}
+
+.btn-about {
+    position: absolute;
+    left: 76vw;
+    top: 49vh;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #ff6433 0, #fe9d3a 100%);
+    box-shadow: 0 10px 45px -10px rgb(254 157 58 / 15%), 0 0 20px -10px rgb(254 157 58 / 35%),
+        0 10px 30px -10px rgb(254 157 58 / 25%);
+    border: none;
+}
+.btn-about a {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.icon-btn-about {
+    display: flex;
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    font-size: 38px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 26px;
+    filter: drop-shadow(0 4px 3px rgba(10, 10, 10, 0.4));
+}
+.detail-info {
+    /* background-color: black; */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0px;
+}
+
+.display-modal {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+.text-info {
+    text-align: justify;
+    width: 40%;
+    animation-name: animation-text;
+    animation-duration: 3s;
+    display: none;
+}
+
+.info-img {
+    text-align: center;
+    width: 40%;
+    display: none;
+}
+.info-img img {
+    width: 90%;
+    animation-name: animation-img;
+    animation-duration: 4s;
+}
+
+.info-name {
+    animation-name: animation-name;
+    animation-duration: 4s;
+}
+
+.active {
+    display: block;
+}
+@keyframes animation-img {
+    from {
+        transform: translate(-64px, -36px);
+        opacity: 0;
+    }
+    to {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+
+@keyframes animation-name {
+    from {
+        transform: translate(0px, 76px);
+        opacity: 0;
+    }
+    to {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+
+@keyframes animation-text {
+    from {
+        scale: 0;
+        opacity: 0;
+    }
+    to {
+        scale: 1;
+        opacity: 1;
+    }
+}
+
+.TTK {
+    position: absolute;
+    font-size: 200px;
+    line-height: 200px;
+    font-family: 'poppins', sans-serif;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    top: 400px;
+    left: 100px;
+    background: url(./back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes back {
+    100% {
+        background-position: 3000px 0px;
+    }
+}

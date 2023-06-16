@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&display=swap');
+
+:root {
+    --font1: 'Lato', sans-serif;
+    --white: white;
+    --black: black;
+    --font2: 'Raleway', sans-serif;
+}
+.about * {
+    font-family: var(--font1);
+}
+.menu-info * {
+    font-family: var(--font2);
+}
+.about {
+    background-image: linear-gradient(27deg, rgba(0, 0, 0, 1) 0%, rgba(64, 64, 64, 1) 36%, rgba(127, 127, 127, 1) 100%);
+    // width: 100vw;
+    width: 100%;
+    height: 100vh;
+}
+
+.navbar-menu img {
+    border-radius: 116px;
+    width: 150px;
+    height: 150px;
+    margin: 12px 99px;
+    -webkit-box-shadow: -4px 3px 20px 8px #363636;
+    box-shadow: -4px 3px 20px 8px #363636;
+}
+.navbar-menu {
+    // background: radial-gradient(circle, rgba(0, 39, 94, 1) 0%, rgba(109, 152, 171, 1) 100%);
+    background: rgb(0, 0, 0);
+    background: linear-gradient(207deg, rgba(0, 0, 0, 1) 15%, rgba(177, 71, 71, 1) 100%, rgba(255, 255, 255, 1) 100%);
+    -webkit-box-shadow: -9px 3px 15px 15px rgb(0 0 0 / 37%);
+    box-shadow: -9px 3px 15px 15px rgb(0 0 0 / 37%);
+    border-radius: 10px;
+    position: absolute;
+    margin-top: 76px;
+    margin-left: 33px;
+}
+.body-cv {
+    position: relative;
+}
+.frist-info {
+    padding-left: 40px;
+}
+.item-body {
+    position: absolute;
+    display: none;
+    top: 0px;
+    right: -1068px;
+    width: 65vw;
+    height: 83vh;
+    padding: 19px;
+    background: white;
+    border-radius: 16px;
+    -webkit-box-shadow: -10px 6px 15px 6px #000000;
+    box-shadow: -10px 6px 15px 6px #000000;
+    border: solid;
+}
+.active {
+    display: block;
+}
+.item-title {
+    margin: 0;
+}
+// .mt-0 {
+//     margin: 0;
+// }
+
+.item-title::before {
+    position: relative;
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid transparent;
+    top: 20px;
+    right: -294px;
+}
+.item-info .active-arrow {
+    color: white;
+}
+.active-arrow::before {
+    border-right: 10px solid blue;
+}
+.item-title {
+    cursor: pointer;
+}
+.contact a {
+    color: white;
+    display: flex;
+    margin-bottom: 6px;
+    align-items: center;
+}
+.contact a span {
+    margin-left: 10px;
+}
+.item-info:hover h3 {
+    color: white;
+}
+.frist-info,
+.item-title {
+    color: #707070;
+}
